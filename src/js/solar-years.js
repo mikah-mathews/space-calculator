@@ -8,8 +8,9 @@ export default class SolarYear {
     return ageInDays;
   }
 
-  mercury() {
-
+  mercury(ageDays) {
+    let mercuryYears = Math.floor(ageDays / 88);
+    return mercuryYears;
   }
 
 }

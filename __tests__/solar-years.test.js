@@ -14,7 +14,8 @@ describe('Solar Year', () => {
 
   test('Should return age in Mercury Years', () => {
     const testYear = new SolarYear(21);
-    expect(testYear.mercury()).toEqual(87);
+    const ageDays = testYear.ageDays();
+    expect(testYear.mercury(ageDays)).toEqual(87);
   });
 
 });
