@@ -17,7 +17,7 @@ export default class SolarYear {
   mercury(ageDays, expectedDays) {
     let mercuryYears = Math.floor(ageDays / 88);
     let mercuryExpectancy = Math.floor(expectedDays / 88);
-    return (mercuryYears, mercuryExpectancy);
+    return [mercuryYears, mercuryExpectancy];
   }
 
   venus(ageDays) {
