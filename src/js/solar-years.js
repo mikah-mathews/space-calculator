@@ -20,7 +20,8 @@ export default class SolarYear {
   }
 
   mercuryLifeExpectancy(expectedDays) {
-    
+    let mercuryYears = Math.floor(expectedDays / 88);
+    return mercuryYears;
   }
 
   venusCurrentAge(ageDays) {
