@@ -16,7 +16,8 @@ describe('Solar Year', () => {
 
   test('Should return age in Mercury Years', () => {
     let ageDays = testYear.ageDays();
-    expect(testYear.mercury(ageDays)).toEqual(87);
+    let mercuryExpectancy = testYear.ageDays();
+    expect(testYear.mercury(ageDays, mercuryExpectancy)).toEqual(87);
   });
 
   test('Should return age in Venus Years', () => {
@@ -42,5 +43,10 @@ describe('Solar Year', () => {
   test('Should convert earth life expectancy to days', () => {
     let expectancyDays = testYear.expectedDays();
     expect(expectancyDays).toEqual(33945);
+  });
+
+  test('Should return life expectancy in Mercury years', () => {
+    let mercuryExpectancy = testYear.ageDays();
+    expect(testYear.mercury(mercuryExpectancy)).toEqual(87);
   });
 });
