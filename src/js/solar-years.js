@@ -1,5 +1,5 @@
 export default class SolarYear {
-  constructor(age) {
+  constructor(age, lifeExpectancy) {
     this.age = age;
   }
 

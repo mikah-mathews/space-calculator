@@ -3,7 +3,7 @@ import SolarYear from './../src/js/solar-years.js'
 describe('Solar Year', () => {
   let testYear
   beforeEach(() => {
-    testYear = new SolarYear(21);
+    testYear = new SolarYear(21, 93);
   });
 
   test('Should take inputted age', () => {
@@ -33,5 +33,9 @@ describe('Solar Year', () => {
     //4310
     let ageDays = testYear.ageDays();
     expect(testYear.jupiter(ageDays)).toEqual(1);
+  });
+
+  test('Should take the inputted life expectancy', () => {
+    expect(testYear.lifeExpectancy).toEqual(93);
   });
 });
