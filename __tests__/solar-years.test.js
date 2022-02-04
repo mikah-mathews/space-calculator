@@ -7,6 +7,11 @@ describe('Solar Year', () => {
     expect(testYear.age).toEqual(21);
   });
 
+  test('Should return age in days', () => {
+    const testYear = new SolarYear(21);
+    expect(testYear.ageDays()).toEqual(7665);
+  });
+
   test('Should return age in Mercury Years', () => {
     const testYear = new SolarYear(21);
     expect(testYear.mercury()).toEqual(87);

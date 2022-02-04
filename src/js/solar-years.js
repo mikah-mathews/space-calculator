@@ -3,8 +3,12 @@ export default class SolarYear {
     this.age = age;
   }
 
-  mercury() {
+  ageDays() {
     
+  }
+
+  mercury() {
+
   }
 
 }
