@@ -19,7 +19,8 @@ export default class SolarYear {
   }
 
   mars(ageDays) {
-    
+    let marsYears = Math.floor(ageDays / 687);
+    return marsYears;
   }
 
 }
