@@ -24,7 +24,8 @@ export default class SolarYear {
   }
 
   jupiter(ageDays) {
-    
+    let jupiterYears = Math.floor(ageDays / 4310);
+    return jupiterYears;
   }
 
 }
