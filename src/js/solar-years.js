@@ -4,7 +4,8 @@ export default class SolarYear {
   }
 
   ageDays() {
-    
+    let ageInDays = Math.floor(this.age * 365);
+    return ageInDays;
   }
 
   mercury() {
