@@ -14,7 +14,8 @@ export default class SolarYear {
   }
 
   venus(ageDays) {
-    
+    let venusYears = Math.floor(ageDays / 225);
+    return venusYears;
   }
 
 }
