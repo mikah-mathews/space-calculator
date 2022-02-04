@@ -10,7 +10,8 @@ export default class SolarYear {
   }
 
   expectedDays() {
-
+    let expectedLivingDays = Math.floor(this.lifeExpectancy * 365)
+    return expectedLivingDays;
   }
 
   mercury(ageDays) {
