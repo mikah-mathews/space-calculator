@@ -38,4 +38,9 @@ describe('Solar Year', () => {
   test('Should take the inputted life expectancy', () => {
     expect(testYear.lifeExpectancy).toEqual(93);
   });
+
+  test('Should convert earth life expectancy to days', () => {
+    let expectancyDays = testYear.expectedDays();
+    expect(expectancyDays).toEqual(33945);
+  });
 });
