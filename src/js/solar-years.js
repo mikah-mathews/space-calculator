@@ -14,23 +14,26 @@ export default class SolarYear {
     return expectedLivingDays;
   }
 
-  mercury(ageDays, expectedDays) {
+  mercuryCurrentAge(ageDays) {
     let mercuryYears = Math.floor(ageDays / 88);
-    let mercuryExpectancy = Math.floor(expectedDays / 88);
-    return [mercuryYears, mercuryExpectancy];
+    return mercuryYears;
   }
 
-  venus(ageDays) {
+  mercuryLifeExpectancy(expectedDays) {
+    
+  }
+
+  venusCurrentAge(ageDays) {
     let venusYears = Math.floor(ageDays / 225);
     return venusYears;
   }
 
-  mars(ageDays) {
+  marsCurrentAge(ageDays) {
     let marsYears = Math.floor(ageDays / 687);
     return marsYears;
   }
 
-  jupiter(ageDays) {
+  jupiterCurrentAge(ageDays) {
     let jupiterYears = Math.floor(ageDays / 4310);
     return jupiterYears;
   } 

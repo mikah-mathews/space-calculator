@@ -25,30 +25,28 @@ describe('Solar Year', () => {
 
   test('Should return age in Mercury Years', () => {
     let ageDays = testYear.ageDays();
-    let mercuryExpectancy = testYear.expectedDays();
-    expect(testYear.mercury(ageDays, mercuryExpectancy)).toEqual([87, 385]);
+    expect(testYear.mercuryCurrentAge(ageDays)).toEqual(87);
   });
 
   test('Should return life expectancy in Mercury years', () => {
-    let ageDays = testYear.ageDays();
     let mercuryExpectancy = testYear.expectedDays();
-    expect(testYear.mercury(ageDays, mercuryExpectancy)).toEqual([87, 385]);
+    expect(testYear.mercuryLifeExpectancy(mercuryExpectancy)).toEqual(385);
   });
 
   test('Should return age in Venus Years', () => {
     let ageDays = testYear.ageDays();
-    expect(testYear.venus(ageDays)).toEqual(34);
+    expect(testYear.venusCurrentAge(ageDays)).toEqual(34);
   });
 
   test('Should return age in Mars years', () => {
     let ageDays = testYear.ageDays();
-    expect(testYear.mars(ageDays)).toEqual(11);
+    expect(testYear.marsCurrentAge(ageDays)).toEqual(11);
   });
 
   test('Should return age in Jupiter years', () => {
     //4310
     let ageDays = testYear.ageDays();
-    expect(testYear.jupiter(ageDays)).toEqual(1);
+    expect(testYear.jupiterCurrentAge(ageDays)).toEqual(1);
   });
 
   
