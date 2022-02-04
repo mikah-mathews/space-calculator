@@ -13,4 +13,8 @@ export default class SolarYear {
     return mercuryYears;
   }
 
+  venus(ageDays) {
+    
+  }
+
 }

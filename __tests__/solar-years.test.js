@@ -19,4 +19,8 @@ describe('Solar Year', () => {
     expect(testYear.mercury(ageDays)).toEqual(87);
   });
 
+  test('Should return age in Venus Years', () => {
+    let ageDays = testYear.ageDays();
+    expect(testYear.venus(ageDays)).toEqual(34);
+  });
 });
