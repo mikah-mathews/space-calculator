@@ -23,4 +23,9 @@ describe('Solar Year', () => {
     let ageDays = testYear.ageDays();
     expect(testYear.venus(ageDays)).toEqual(34);
   });
+
+  test('Should return age in Mars years', () => {
+    let ageDays = testYear.ageDays();
+    expect(testYear.mars(ageDays)).toEqual(11);
+  });
 });

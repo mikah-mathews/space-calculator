@@ -18,4 +18,8 @@ export default class SolarYear {
     return venusYears;
   }
 
+  mars(ageDays) {
+    
+  }
+
 }
