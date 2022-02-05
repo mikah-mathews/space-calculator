@@ -48,6 +48,11 @@ describe('Solar Year', () => {
     expect(testYear.marsCurrentAge(ageDays)).toEqual(11);
   });
 
+  test('Should return life expectancy in Mars years', () => {
+    let marsExpectancy = testYear.expectedDays();
+    expect(testYear.marsLifeExpectancy(marsExpectancy)).toEqual(49);
+  });
+
   test('Should return age in Jupiter years', () => {
     //4310
     let ageDays = testYear.ageDays();

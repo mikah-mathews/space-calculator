@@ -39,6 +39,10 @@ export default class SolarYear {
     return marsYears;
   }
 
+  marsLifeExpectancy(expectedDays) {
+    
+  }
+
   jupiterCurrentAge(ageDays) {
     let jupiterYears = Math.floor(ageDays / 4310);
     return jupiterYears;
