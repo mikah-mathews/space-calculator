@@ -49,4 +49,8 @@ export default class SolarYear {
     return jupiterYears;
   } 
 
+  jupiterLifeExpectancy(expectedDays) {
+    
+  }
+
 }

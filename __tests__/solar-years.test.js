@@ -59,7 +59,8 @@ describe('Solar Year', () => {
     expect(testYear.jupiterCurrentAge(ageDays)).toEqual(1);
   });
 
-  
-
-  
+  test('Should return life expectancy in Jupiter years', () => {
+    let jupiterExpectancy = testYear.expectedDays();
+    expect(testYear.jupiterLifeExpectancy(jupiterExpectancy)).toEqual(7);
+  });
 });
