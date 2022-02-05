@@ -29,6 +29,11 @@ export default class SolarYear {
     return venusYears;
   }
 
+  venusLifeExpectancy(expectedDays) {
+    // let venusYears = Math.floor(expectedDays / 225);
+    // return venusYears;
+  }
+
   marsCurrentAge(ageDays) {
     let marsYears = Math.floor(ageDays / 687);
     return marsYears;
