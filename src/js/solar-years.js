@@ -10,7 +10,12 @@ export default class SolarYear {
   }
 
   pastLifeExpectancy() {
-    
+    let currentAge = parseInt(this.age);
+    let lifeExpectancy = parseInt(this.lifeExpectancy);
+    if (lifeExpectancy < currentAge) {
+      currentAge = currentAge - lifeExpectancy;
+    }
+    return currentAge;
   }
 
   expectedDays() {

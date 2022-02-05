@@ -66,6 +66,6 @@ describe('Solar Year', () => {
 
   test('Should return years past life expectancy', () => {
     let survivor = new SolarYear(100, 93);
-    expect(survivor.pastLifeExpectancy).toEqual(7);
+    expect(survivor.pastLifeExpectancy()).toEqual(7);
   });
 });
