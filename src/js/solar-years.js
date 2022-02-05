@@ -50,7 +50,8 @@ export default class SolarYear {
   } 
 
   jupiterLifeExpectancy(expectedDays) {
-    
+    let jupiterYears = Math.floor(expectedDays / 4301);
+    return jupiterYears;
   }
 
 }
