@@ -63,4 +63,9 @@ describe('Solar Year', () => {
     let jupiterExpectancy = testYear.expectedDays();
     expect(testYear.jupiterLifeExpectancy(jupiterExpectancy)).toEqual(7);
   });
+
+  test('Should return years past life expectancy', () => {
+    let survivor = new SolarYear(100, 93);
+    expect(survivor.pastLifeExpectancy).toEqual(7);
+  });
 });

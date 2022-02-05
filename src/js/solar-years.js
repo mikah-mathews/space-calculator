@@ -9,6 +9,10 @@ export default class SolarYear {
     return ageInDays;
   }
 
+  pastLifeExpectancy() {
+    
+  }
+
   expectedDays() {
     let expectedLivingDays = Math.floor(this.lifeExpectancy * 365);
     return expectedLivingDays;
