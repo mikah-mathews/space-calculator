@@ -54,7 +54,6 @@ describe('Solar Year', () => {
   });
 
   test('Should return age in Jupiter years', () => {
-    //4310
     let ageDays = testYear.ageDays();
     expect(testYear.jupiterCurrentAge(ageDays)).toEqual(1);
   });

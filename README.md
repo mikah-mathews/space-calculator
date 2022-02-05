@@ -27,11 +27,9 @@ _Ever wondered how old you would be if you lived on a different planet? This pro
 * _Run 'npm run build'_
 * _Open server to view webpage_
 
-## Web Page Link
+## Current Limitations
 
-_https://mikah-mathews.github.io/space-calculator/_
-
-
+_As of right now there is no user interface, only backend logic. There is also a lot of repetitive code that could be refactored to use 'Map()' or a loop._
 
 ## License
 
